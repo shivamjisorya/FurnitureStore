@@ -36,5 +36,26 @@ Ensure you have the following installed:
 1. **Clone the repository**:
 
    ```sh
-   git clone 
-   cd 
+   git clone https://github.com/shivamjisorya/furnitureStore.git
+   cd furnitureStore
+Install dependencies:
+
+sh
+Copy code
+npm install
+Run the application:
+
+sh
+Copy code
+npm start
+Access the application:
+
+User-Facing Storefront: http://localhost:3000
+Admin Panel: http://localhost:3000/admin
+Project Structure
+/public: Static files (CSS, images, etc.)
+/views: HTML templates
+/routes: Route definitions
+/controllers: Request handlers
+/models: Database models
+/config: Configuration files
