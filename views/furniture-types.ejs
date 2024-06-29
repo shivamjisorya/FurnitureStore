@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- =================TITLE============= -->
+ <title>FURNITURE-TYPES</title>
+ <!-- =================TITLE============= -->
+</head>
+<body>
+  <!-- ==================header file================= -->
+        <%- include('./common/header.ejs')%>
+  <!-- ==================header file================= -->
+
+    
+<div class="container-fluid search-filter-container">
+    <div class="col-md-3 search-col">
+        <h4 class="mt-5">Search for Products</h4>
+        <input type="text" class="form-control mb-2" placeholder="Enter your search">
+        
+        <h4 class="mt-5">Refine By</h4>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="checkbox1">
+            <label class="form-check-label" for="checkbox1">ON SALE</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="checkbox2">
+            <label class="form-check-label" for="checkbox2">NEW</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="checkbox3">
+            <label class="form-check-label" for="checkbox3">IN STOCK</label>
+        </div>
+
+        <h4 class="mt-5">Price Range</h4>
+        <input type="range" class="form-control-range" min="100" max="100000" step="10">
+
+        <h4 class="mt-5">Color Options</h4>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="colorCheckbox1">
+            <label class="form-check-label" for="colorCheckbox1">white & black</label>
+        </div>
+        
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="colorCheckbox2">
+            <label class="form-check-label" for="colorCheckbox2">brown & black</label>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="colorCheckbox3">
+            <label class="form-check-label" for="colorCheckbox3">white & brown</label>
+        </div>
+
+        <h4 class="mt-5">type</h4>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="sizeCheckboxXS">
+            <label class="form-check-label" for="sizeCheckboxXS">Bed</label>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="sizeCheckboxS">
+            <label class="form-check-label" for="sizeCheckboxS">table</label>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="sizeCheckboxM">
+            <label class="form-check-label" for="sizeCheckboxM">sofaa</label>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="sizeCheckboxL">
+            <label class="form-check-label" for="sizeCheckboxL">chair</label>
+        </div>
+
+
+    </div>
+
+    <div class="col-md-9 product-col">
+        <!-- Product Cards -->
+        <div class="container text-center mt-5">
+            <h2>Best class Chairs</h2>
+        </div>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 transform-container2 mt-2">
+                <div class="product-card custom-card">
+                    <img src="./furntiurepics/chairs1.jpg" alt="Product 1">
+                    <h5>chairs</h5>
+                    <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <span class="original-price">$100</span>
+                        <span class="discount">$50</span>
+                    </div>
+        
+                    <!-- Add to Cart button -->
+
+        <button class="btn btn-checkout" onclick="openOffCanvas()">
+        <i class="fas fa-shopping-cart"></i> Add to Cart
+        </button>
+
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-4 transform-container2 mt-2">
+                <div class="product-card custom-card">
+                    <img src="./furntiurepics/chairs2.jpg" alt="Product 2">
+                    <h5>chair</h5>
+                    <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <span class="original-price">$120</span>
+                        <span class="discount">$60</span>
+                    </div>
+        
+                    <!-- Add to Cart button -->
+
+        <button class="btn btn-checkout" onclick="openOffCanvas()">
+        <i class="fas fa-shopping-cart"></i> Add to Cart
+        </button>
+
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+
+            <div class="col-md-4 transform-container2 mt-2">
+                <div class="product-card custom-card">
+                    <img src="./furntiurepics/chairs3.jpg" alt="Product 3">
+                    <h5>chair</h5>
+                    <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <span class="original-price">$90</span>
+                        <span class="discount">$45</span>
+                    </div>
+        
+                    <!-- Add to Cart button -->
+
+        <button class="btn btn-checkout" onclick="openOffCanvas()">
+        <i class="fas fa-shopping-cart"></i> Add to Cart
+        </button>
+
+                </div>
+            </div>
+
+        </div>
+            <!-- ========================2nd row============================= -->
+        <!--======================================================================================= -->
+        <div class="container text-center mt-5">
+            <h2>Best in class Beds</h2>
+        </div>
+        <div class="row">
+            <!-- Product 4 -->
+            <div class="col-md-4 transform-container2 mt-2">
+                <div class="product-card custom-card">
+                    <img src="./furntiurepics/bedroom1.jpg" alt="Product 1">
+                    <h5>Beds</h5>
+                    <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <span class="original-price">$100</span>
+                        <span class="discount">$50</span>
+                    </div>
+        
+                    <!-- Add to Cart button -->
+
+        <button class="btn btn-checkout" onclick="openOffCanvas()">
+        <i class="fas fa-shopping-cart"></i> Add to Cart
+        </button>
+
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col-md-4 transform-container2 mt-2">
+                <div class="product-card custom-card">
+                    <img src="./furntiurepics/bedroom2.jpg" alt="Product 2">
+                    <h5>Beds</h5>
+                    <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <span class="original-price">$120</span>
+                        <span class="discount">$60</span>
+                    </div>
+        
+                    <!-- Add to Cart button -->
+
+        <button class="btn btn-checkout" onclick="openOffCanvas()">
+        <i class="fas fa-shopping-cart"></i> Add to Cart
+        </button>
+
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="col-md-4 transform-container2 mt-2">
+                <div class="product-card custom-card">
+                    <img src="./furntiurepics/bedroom3.jpg" alt="Product 3">
+                    <h5>Beds</h5>
+                    <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <span class="original-price">$90</span>
+                        <span class="discount">$45</span>
+                    </div>
+        
+                    <!-- Add to Cart button -->
+
+        <button class="btn btn-checkout" onclick="openOffCanvas()">
+        <i class="fas fa-shopping-cart"></i> Add to Cart
+        </button>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- ============================================================================================== -->
+        <div class="container text-center mt-5">
+            <h2>Best in class Tables</h2>
+        </div>
+        <div class="row">
+            <!-- Product 7 -->
+            <div class="col-md-4 transform-container2 mt-2">
+                <div class="product-card custom-card">
+                    <img src="./furntiurepics/table1.jpg" alt="Product 1">
+                    <h5>table</h5>
+                    <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <span class="original-price">$100</span>
+                        <span class="discount">$50</span>
+                    </div>
+        
+                    <!-- Add to Cart button -->
+
+        <button class="btn btn-checkout" onclick="openOffCanvas()">
+        <i class="fas fa-shopping-cart"></i> Add to Cart
+        </button>
+
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="col-md-4 transform-container2 mt-2">
+                <div class="product-card custom-card">
+                    <img src="./furntiurepics/table2.jpg" alt="Product 2">
+                    <h5>table</h5>
+                    <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <span class="original-price">$120</span>
+                        <span class="discount">$60</span>
+                    </div>
+        
+                    <!-- Add to Cart button -->
+
+        <button class="btn btn-checkout" onclick="openOffCanvas()">
+        <i class="fas fa-shopping-cart"></i> Add to Cart
+        </button>
+
+                </div>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="col-md-4 transform-container2 mt-2">
+                <div class="product-card custom-card">
+                    <img src="./furntiurepics/table3.jpg" alt="Product 3">
+                    <h5>table</h5>
+                    <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <span class="original-price">$90</span>
+                        <span class="discount">$45</span>
+                    </div>
+        
+                    <!-- Add to Cart button -->
+
+        <button class="btn btn-checkout" onclick="openOffCanvas()">
+        <i class="fas fa-shopping-cart"></i> Add to Cart
+        </button>
+
+                </div>
+            </div>
+
+        </div>
+            
+        <!--======================================================================================= -->
+        <div class="container text-center mt-5">
+            <h2>Best in class Sofa-Sets</h2>
+        </div>
+        <div class="row">
+            <!-- Product 10 -->
+            <div class="col-md-4 transform-container2 mt-2">
+                <div class="product-card custom-card">
+                    <img src="./furntiurepics/sofa1.jpg" alt="Product 1">
+                    <h5>Product 1</h5>
+                    <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <span class="original-price">$100</span>
+                        <span class="discount">$50</span>
+                    </div>
+        
+                    <!-- Add to Cart button -->
+
+        <button class="btn btn-checkout" onclick="openOffCanvas()">
+        <i class="fas fa-shopping-cart"></i> Add to Cart
+        </button> 
+
+                </div>
+            </div>
+
+            <!-- Product 11 -->
+            <div class="col-md-4 transform-container2 mt-2">
+                <div class="product-card custom-card">
+                    <img src="./furntiurepics/sofa2.jpg" alt="Product 2">
+                    <h5>Product 2</h5>
+                    <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <span class="original-price">$120</span>
+                        <span class="discount">$60</span>
+                    </div>
+        
+                    <!-- Add to Cart button -->
+
+        <button class="btn btn-checkout" onclick="openOffCanvas()">
+        <i class="fas fa-shopping-cart"></i> Add to Cart
+        </button>
+
+                </div>
+            </div>
+
+            <!-- Product 12 -->
+            <div class="col-md-4 transform-container2 mt-2">
+                <div class="product-card custom-card">
+                    <img src="./furntiurepics/sofa3.jpg" alt="Product 3">
+                    <h5>Product 3</h5>
+                    <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <span class="original-price">$90</span>
+                        <span class="discount">$45</span>
+                    </div>
+        
+                    <!-- Add to Cart button -->
+
+        <button class="btn btn-checkout" onclick="openOffCanvas()">
+        <i class="fas fa-shopping-cart"></i> Add to Cart
+        </button>
+
+                </div>
+            </div>
+
+        </div>
+            
+            
+
+            
+
+    </div>
+</div>
+
+
+  
+<div class="container-fluid">
+    <!-- ===================footer================== -->
+    <%- include('./common/footer.ejs')%>
+    <!-- ===================footer================== -->
+    </div>
+    
+

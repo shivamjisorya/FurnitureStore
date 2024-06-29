@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add-product-file</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+</head>
+<body>
+
+    <!-- ===================================== -->
+    <%- include('./header.ejs')%>
+    <!-- ===================================== -->
+
+    <!-- ===================================== -->
+    <%- include('./left.ejs')%>
+    <!-- ===================================== -->
+    <div class="col-md-9 form-container-body">
+ 
+
+        <div class="form-container">
+            <form method="post">
+                <h1>Add Product Details</h1>
+    
+                <div class="form-group">
+                    <label for="productimage">Product Image:</label>
+                    <input type="file" id="productimage" name="productimage"  value="<%= editproduct.productimage %>" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="productName">Product Name:</label>
+                    <input type="text" id="productName" name="productname" value="<%= editproduct.productname %>" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="productType">Product Type:</label>
+                    <input type="text" id="productType" name="producttype" value="<%= editproduct.producttype %>" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="productPrice">Product Price:</label>
+                    <input type="number" id="productPrice" name="productprice" value="<%= editproduct.productprice %>" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="productQuantity">Product Description:</label>
+                    <input type="text" id="productQuantity" name="description" value="<%= editproduct.description %>" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="productQuantity">Product Highlights:</label>
+                    <input type="text" id="productQuantity" name="highlights" value="<%= editproduct.highlights %>" required>
+                </div>
+
+    
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        </div>
+        </div>
+    
+
+
+      <!-- ===================================== -->
+      <%- include('./footer.ejs')%>
+      <!-- ===================================== -->
+      

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>item-table-file</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+
+</head>
+<body class="category-custom">
+
+    <!-- ===================================== -->
+    <%- include('./header.ejs')%>
+    <!-- ===================================== -->
+
+    <!-- ===================================== -->
+    <%- include('./left.ejs')%>
+    <!-- ===================================== -->
+    <div class="col-md-9">
+        <table id="itemTable">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Brand</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>201</td>
+                    <td>Item 1</td>
+                    <td>Category A</td>
+                    <td>$50.00</td>
+                    <td>Brand X</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>202</td>
+                    <td>Item 2</td>
+                    <td>Category B</td>
+                    <td>$75.00</td>
+                    <td>Brand Y</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+
+
+<!-- ===================================== -->
+<%- include('./footer.ejs')%>
+<!-- ===================================== -->
+
+</body>
+</html>

@@ -1,0 +1,390 @@
+
+/* ================================================================================================ */
+                                        /* common files */
+/* ================================================================================================ */
+.button1{
+  background-color: red;
+  color: white;
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+
+}
+
+.button2{
+  background-color: blue;
+  color: white;
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+
+}
+
+
+/* ================================================================================================ */
+                                        /* common files */
+/* ================================================================================================ */
+
+
+/* ================================================================================================ */
+                                        /* header */
+/* ================================================================================================ */
+
+
+.navbar-brand {
+    font-family: 'Georgia', serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #4e4e4e; /* Dark gray color for the brand */
+}
+
+
+/* ================================================================================================ */
+                                        /* header */
+/* ================================================================================================ */
+
+
+/* ================================================================================================ */
+                                        /* left-ejs-file */
+/* ================================================================================================ */
+
+.left-column{
+    background-color: white;
+    height: auto;
+    color: blue;
+    margin-top: 30px;
+
+}
+
+/* ================================================================================================ */
+                                        /* left-ejs-file */
+/* ================================================================================================ */
+
+
+
+
+
+/* ================================================================================================ */
+                                        /* index file */
+/* ================================================================================================ */
+
+.indexh1{
+font-size: 55px;
+text-align: center;
+color: #B3C0A4;
+}
+
+/* ================================================================================================ */
+                                        /* index file */
+/* ================================================================================================ */
+
+
+/* ================================================================================================ */
+                                        /* login form */
+/* ================================================================================================ */
+
+
+.login-form-container {
+    background-color: #f0f0f0; /* Background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .login-form form {
+    background-color: #fff; /* Form color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  }
+
+  .login-form h1 {
+    text-align: center;
+  }
+
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Button color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .login-form a {
+    text-align: right;
+    display: block;
+    margin-top: 10px;
+    color: #007bff; /* Link color */
+    text-decoration: none;
+  }
+
+  
+/* ================================================================================================ */
+                                        /* login form */
+/* ================================================================================================ */
+
+
+/* ================================================================================================ */
+                                        /* add category form */
+/* ================================================================================================ */
+
+
+
+.form-container-body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: calc(100% - 16px);
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.form-group button:hover {
+  background-color: #45a049;
+}
+
+
+/* ================================================================================================ */
+                                        /* add category form */
+/* ================================================================================================ */
+
+
+/* ================================================================================================ */
+                                        /* view product */
+/* ================================================================================================ */
+
+
+#brandTable {
+  width: 70%;
+  margin: 50px auto;
+  border-collapse: collapse;
+  background-color: #FFF;
+ 
+}
+
+#brandTable th, #brandTable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+#brandTable th {
+  background-color: #FF6F61;
+  color: #FFF;
+}
+
+
+/* ================================================================================================ */
+                                        /* view product */
+/* ================================================================================================ */
+
+
+/* ================================================================================================ */
+                                        /* category table */
+/* ================================================================================================ */
+
+
+#categoryTable {
+  margin: 50px auto;
+  border-collapse: collapse;
+  background-color: #FFF;
+  -webkit-box-shadow: 1px 1px 28px 36px rgba(0,0,0,0.55);
+  -moz-box-shadow: 1px 1px 28px 36px rgba(0,0,0,0.55);
+  box-shadow: 1px 1px 28px 36px rgba(0,0,0,0.55);
+}
+
+#categoryTable th, #categoryTable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+#categoryTable th {
+  background-color: #FF6F61;
+  color: #FFF;
+}
+
+.category-body{
+  background-color: #F0F0F0;
+  color: #333;
+  
+}
+
+
+/* ================================================================================================ */
+                                        /* category table */
+/* ================================================================================================ */
+
+
+/* ================================================================================================ */
+                                        /* item table */
+/* ================================================================================================ */
+
+
+#itemTable {
+  width: 70%;
+  margin: 50px auto;
+  border-collapse: collapse;
+  background-color: #FFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#itemTable th, #itemTable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+#itemTable th {
+  background-color: #FF6F61;
+  color: #FFF;
+}
+
+
+/* ================================================================================================ */
+                                        /* item table */
+/* ================================================================================================ */
+
+
+/* ================================================================================================ */
+                                        /* cart table */
+/* ================================================================================================ */
+
+
+
+#cartTable {
+  width: 70%;
+  margin: 50px auto;
+  border-collapse: collapse;
+  background-color: #FFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cartTable th, #cartTable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+#cartTable th {
+  background-color: #FF6F61;
+  color: #FFF;
+}
+
+
+/* ================================================================================================ */
+                                        /* cart table */
+/* ================================================================================================ */
+
+
+/* ================================================================================================ */
+                                        /* brand table */
+/* ================================================================================================ */
+
+
+
+#brandTable {
+  width: 70%;
+  margin: 50px auto;
+  border-collapse: collapse;
+  background-color: #FFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#brandTable th, #brandTable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+#brandTable th {
+  background-color: #FF6F61;
+  color: #FFF;
+}
+
+
+/* ================================================================================================ */
+                                        /* brand table */
+/* ================================================================================================ */
+
+
+
+/* ================================================================================================ */
+                                        /* staff table */
+/* ================================================================================================ */
+
+#brandTable {
+  width: 70%;
+  margin: 50px auto;
+  border-collapse: collapse;
+  background-color: #FFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#brandTable th, #brandTable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+#brandTable th {
+  background-color: #FF6F61;
+  color: #FFF;
+}
+
+/* ================================================================================================ */
+                                        /* staff table */
+/* ================================================================================================ */
+

@@ -1,0 +1,781 @@
+/*----------------------------------------------------------------------------------------------------- */
+/*----------------------------------------------------------------------------------------------------- */
+                                 /* SJ THE FURNITURE STORE */
+/*----------------------------------------------------------------------------------------------------- */
+/*----------------------------------------------------------------------------------------------------- */
+
+/* 
+font-family: 'Assistant', sans-serif;
+font-family: 'Fuggles', cursive;
+font-family: 'Mooli', sans-serif;
+font-family: 'Noto Serif', serif;
+ */
+
+
+* {
+    font-family: 'Noto Serif', serif;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/* =========================================================================================== */
+                            /* Custom CSS for navigation bar */
+/* =========================================================================================== */
+
+ body {
+    padding-top: 80px;
+    background-color: rgb(233, 233, 233);
+}
+
+.navbar{
+    background-color: #B3C0A4;
+
+}
+
+.navbar-brand {
+    font-family: 'Georgia', serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000; /* Dark gray color for the brand */
+}
+
+.nav-item{
+    margin-right: 15px;
+    font-size: 1.1rem;
+    color: #313131; 
+  }
+
+.navbar-nav {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #383838; 
+}
+
+.navbar ul li{
+color:#4e4e4e
+}
+
+/* =========================================================================================== */
+                            /* Custom CSS for navigation bar */
+/* =========================================================================================== */
+
+
+/* 
+<!-- ===================================================================================== 0-->
+<!-- carousal -->
+<!-- ===================================================================================== 0-->
+ */
+
+  /* Custom CSS for the carousel */
+ .carousel-for-index .carousel {
+    height: 650px; 
+    margin-top: 20px; 
+}
+
+.carousel-for-index .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-for-index .carousel-item img{
+    height: 600px;
+}
+.carousel-for-index .carousel-item h5{
+font-size: 3rem;
+text-transform: capitalize;
+color: #ecfee8;
+
+}
+
+.carousel-for-index .carousel-item p{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: #ecfee8;
+
+}
+
+
+
+/* 
+<!-- ===================================================================================== 0-->
+<!-- carousal -->
+<!-- ===================================================================================== 0-->
+
+<!-- ==================================================================================== -->
+<!-- easy information area  -->
+<!-- ==================================================================================== -->
+ */
+ .info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #B3C0A4;
+    padding: 20px;
+    border: 20px solid #ffffff;
+    border-radius: 40px;
+    margin: auto;
+  }
+
+  .icon {
+    font-size: 3em;
+  }
+
+  .info-text {
+    text-align: center;
+  }
+/* 
+<!-- ==================================================================================== -->
+<!-- easy information area  -->
+<!-- ==================================================================================== -->
+ */
+
+ /* =======================hr tag /// daily deals=============================== */
+.h-rule{
+        position: relative;
+        top: 20px;
+        border: none;
+        height: 12px;
+        background: #B3C0A4;
+        margin-bottom: 50px;
+        /* justify-content: center; */
+        /* text-align: center; */
+        margin: auto;
+        width: 600px;
+}
+.h-rule-h3{
+       color:#01200f ;
+       font-size: 3rem;
+       margin-bottom: -20px;
+}
+ /* =======================hr tag /// daily deals=============================== */
+
+
+/* ========================================================================================== */
+                            /* navbar collapse */
+/* ========================================================================================== */
+
+.pet-navbar {
+    text-align: center;
+  }
+
+  .pet-nav-item {
+    cursor: pointer;
+  }
+
+  .pet-active {
+    background-color: #f8f9fa; /* Light grey background for active item */
+  }
+
+  .pet-card {
+    border-radius: 15px;
+    /* margin: 15px; */
+    box-shadow: 3px 4px 4px 1px;
+    box-shadow: #4e4e4e;
+  }
+
+  .pet-card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 300px;
+    width: 100%;
+  }
+
+  .pet-card-body {
+    text-align: center;
+  }
+
+  .pet-btn-buy {
+    background-color: #B3C0A4;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+/* ========================================================================================== */
+                            /* navbar collapse */
+/* ========================================================================================== */
+
+
+
+/* ========================================================================================== */
+                            /* blog-cards */
+/* ========================================================================================== */
+
+.card-clr{
+  background-color: #B3C0A4;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 3px 4px 4px 1px;
+}
+
+.card-clr img{
+  height: 300px;
+  border-radius: 50px;
+}
+
+.card-text-mega{
+  border-radius: 10px;
+}
+
+
+/* ========================================================================================== */
+                            /* blog-cards */
+/* ========================================================================================== */
+
+
+/* ========================================================================================== */
+                            /*review-blocks */
+/* ========================================================================================== */
+
+
+.furniture-review {
+  border: 5px solid #4e4e4e;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 50px;
+  background-color: #B3C0A4;
+  box-shadow: 3px 4px 10px 5px;
+
+}
+
+.furniture-review h {
+  font-weight: bold;
+  
+}
+
+.furniture-review p {
+  color: #4e4e4e;
+}
+.furniture-review .stars {
+  color: #ffd700; /* Golden color for stars */
+}
+
+
+/* ========================================================================================== */
+                            /*review-blocks */
+/* ========================================================================================== */
+
+
+/* ========================================================================================== */
+                            /*footer section */
+/* ========================================================================================== */
+
+.footer {
+  background-color: #B3C0A4;
+  color: #4e4e4e;
+  padding: 20px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: 75px;
+
+
+}
+.footer h5 {
+    color: #4e4e4e;
+    font-weight: 900;
+
+}
+.footer p {
+    color: #4e4e4e;
+
+}
+.footer input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+/* ========================================================================================== */
+                            /*footer section */
+/* ========================================================================================== */
+
+
+
+/* ================================================================================================= */
+/* ================================================================================================= */
+/* ================================================================================================= */
+/* ================================================================================================= */
+/* ====================================ABOUT US PAGE================================================ */
+/* ================================================================================================= */
+/* ================================================================================================= */
+/* ================================================================================================= */
+/* ================================================================================================= */
+
+
+
+
+.about-section {
+  margin-top: 50px;
+}
+
+.about-section h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  margin-bottom: 50px;
+}
+
+.transform-container {
+  transition: transform 0.5s ease-in-out;
+  /* margin-left: 30px; */
+}
+  
+.transform-container:hover {
+  transform: scale(1.5);
+}
+
+
+
+.about-image-container {
+  width: 300px;
+  height: 300px;
+  /* margin: 0 10px; */
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.custom-call{
+  margin-top: 20px;
+  color: black;
+  text-align: left;
+}
+
+.aim-aboutus {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  margin-top: 100px;
+}
+
+.aim-container {
+  background-color: #64A6BD;
+  color: white;
+  border-radius: 10px;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  
+}
+
+
+
+/* ========================================================================================== */
+                            /*teammates section */
+/* ========================================================================================== */
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  /* margin: 20px; */
+  margin-top: 50px;
+}
+
+.team-member {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 10);
+  overflow: hidden;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  
+}
+
+.team-member p {
+  margin: 10px 0;
+  color: #333;
+}
+/* ========================================================================================== */
+                            /*teammates section */
+/* ========================================================================================== */
+
+
+/* ========================================================================================== */
+                            /*companies-as clients/
+/* ========================================================================================== */
+
+.companies-linked {
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px;
+  text-align: center;
+}
+
+.companies-linked img {
+  width: 100%;
+  height: auto;
+}
+
+/* ========================================================================================== */
+                            /*companies-as clients/
+/* ========================================================================================== */
+
+
+
+
+
+/* ================================================================================================= */
+/* ================================================================================================= */
+/* ================================================================================================= */
+/* ================================================================================================= */
+/* ====================================CONTACT-US=================================================== */
+/* ================================================================================================= */
+/* ================================================================================================= */
+/* ================================================================================================= */
+/* ================================================================================================= */
+
+.iframe-maps{
+  height: 500px;
+  margin-top: 30px;
+  border-radius: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 10);
+
+}
+
+/* =========================================================================================== */
+                                    /* GET-IN-TOUCH CLASS */
+/* =========================================================================================== */
+
+
+
+
+.get-in-touch .custom-container {
+  background-color: #B3C0A4;
+  color: #4e4e4e;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 10px solid white;
+}
+
+.get-in-touch .contact-form {
+  margin-top: 20px;
+  /* text-align: center; */
+}
+
+.get-in-touch .contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.get-in-touch .contact-form input,
+.get-in-touch .contact-form textarea {
+  width: 40%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.get-in-touch .contact-form textarea {
+  height: 80px;
+}
+
+.get-in-touch .follow-us {
+  margin-top: 20px;
+}
+
+.get-in-touch .social-icons {
+  font-size: 24px;
+  color: #B3C0A4;
+  margin-right: 10px;
+}
+
+
+/* =========================================================================================== */
+                                    /* GET-IN-TOUCH CLASS */
+/* =========================================================================================== */
+
+
+
+/* ================================================================================================= */
+/* ================================================================================================= */
+/* ================================================================================================= */
+/* ================================================================================================= */
+/* ====================================FURNITURE-TYPES=================================================== */
+/* ================================================================================================= */
+/* ================================================================================================= */
+/* ================================================================================================= */
+/* ================================================================================================= */
+
+.search-filter-container {
+  display: flex;
+  margin: 0;
+  margin-top: 100px;
+}
+
+.search-col {
+  background-color: #a9a9a9;
+  padding: 15px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+.product-col {
+  padding: 15px;
+}
+
+/* .product-col h2{
+  color: #B3C0A4;
+} */
+
+.product-card {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.price {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.discount {
+  color: green;
+}
+
+.original-price {
+  color: red;
+  text-decoration: line-through;
+  margin-right: 5px;
+}
+
+.star-rating {
+  color: gold;
+}
+
+
+.transform-container2 {
+  transition: transform 0.5s ease-in-out;
+  /* margin-left: 30px; */
+}
+  
+.transform-container2:hover {
+  transform: scale(1.2);
+}
+
+.custom-card{
+  border: 3px solid #B3C0A4;
+
+}
+
+.custom-card img{
+width: 100%;
+height: 300px;
+}
+
+
+/* ================================================================================================= */
+/* ================================================================================================= */
+/* ================================================================================================= */
+/* ================================================================================================= */
+/* ====================================COLLECTIONS=================================================== */
+/* ================================================================================================= */
+/* ================================================================================================= */
+/* ================================================================================================= */
+/* ================================================================================================= */
+.collections-container {
+  padding: 40px;
+}
+
+.collection-item {
+  margin-bottom: 50px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.collection-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.collection-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.collection-item:hover .collection-image {
+  transform: scale(1.05);
+}
+
+.collection-details {
+  padding: 40px;
+  background-color: #FFF;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.collection-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.collection-description {
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.collection-button {
+  padding: 15px 30px;
+  background-color: #FF6F61;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.collection-button:hover {
+  background-color: #D8453E;
+}
+
+/* ============================================================================================= */
+                                /* off canvas for add to card button*/
+/* ============================================================================================= */
+
+
+#offCanvas {
+  display: none;
+  position: fixed;
+  top: 100px;
+  right: 0;
+  height: 100%;
+  width: 400px;
+  background-color: #FFF;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1000;
+}
+
+#offCanvas img {
+  max-width: 100%;
+  height: 300px;
+  margin-bottom: 30px;
+  border-radius: 5px ;
+}
+
+
+
+/* ============================================================================================= */
+                                /* scroll to top button*/
+/* ============================================================================================= */
+
+
+
+  /* Custom CSS to position the button */
+  #scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #B3C0A4;
+    transition: opacity 0.5s, transform 2s;
+  }
+
+
+
+
+/* ============================================================================================= */
+                                /* scroll to top button*/
+/* ============================================================================================= */
+
+
+
+
+/* ============================================================================================= */
+                                /* of canvas for add to card button*/
+/* ============================================================================================= */
+
+
+.offcanvas-title{
+  text-align: left;
+  color: #B3C0A4;
+  font-size: 45px;
+}
+
+.offcanvas-img{
+  height: 300px;
+  width: 300px;
+  margin-left: 30px;
+}
+
+.offcanvas input{
+  margin-left: 50px;
+}
+
+.offcanvas h3{
+  color: red;
+  text-align: center;
+}
+
+/* Button styles */
+.btn-checkout {
+  background-color: #B3C0A4;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 16px;
+}
+
+.btn-checkout:hover {
+  background-color: #D8453E;
+}
+
+#closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #FFF;
+  background-color: #FF6F61;
+  border: none;
+  border-radius: 50%;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#closeButton:hover {
+  background-color: #D8453E;
+}
+
+/* ============================================================================================= */
+                                /* of canvas for add to card button*/
+/* ============================================================================================= */

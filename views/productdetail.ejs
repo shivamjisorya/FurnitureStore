@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- =================TITLE============= -->
+ <title>Furniture Store</title>
+ <!-- =================TITLE============= -->
+ <style>
+.product-view img{
+   border-radius: 20px;
+}
+
+.product-view h3{
+  color: brown;
+}
+
+.product-view h5{
+  /* color: burlywood; */
+  color: none;
+}
+ </style>
+</head>
+<body>
+  <!-- ==================header file================= -->
+        <%- include('./common/header.ejs')%>
+  <!-- ==================header file================= -->
+</div>
+</div>
+
+  <div class="container mt-5 product-view">
+    <div class="row">
+        <div class="col-md-3 mt-5 ">
+            <img src="/<%= productdata.filename %>" height="300px" width="300px">
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-8">
+            <h3 class="mt-5">product</h3>
+            <h5 class="fw-bold"><%= productdata.productname %></h5>
+            <h3 class="mt-5">product type</h3>
+            <h5  class="fw-bold"><%= productdata.producttype %></h5>
+            <h3 class="mt-5">price</h3>
+            <h5  class="fw-bold"><strong><%= productdata.productprice %></strong></h5>
+            <h3 class="mt-5">Product Description</h3>
+            <p class="fw-bold"><%= productdata.description %></p>
+            <h3 class="mt-5">Product highlights</h3>
+            <p class="fw-bold"><%= productdata.highlights %></p>
+
+        </div>
+    </div>
+  </div>
+
+    
+<div class="container-fluid">
+    <!-- ===================footer================== -->
+    <%- include('./common/footer.ejs')%>
+    <!-- ===================footer================== -->
+    </div>
+    
+    
+    </body>
+    </html>
+
+
+
+
+
+

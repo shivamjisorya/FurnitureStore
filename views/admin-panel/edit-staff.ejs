@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add-product-file</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+</head>
+<body>
+
+    <!-- ===================================== -->
+    <%- include('./header.ejs')%>
+    <!-- ===================================== -->
+
+    <!-- ===================================== -->
+    <%- include('./left.ejs')%>
+    <!-- ===================================== -->
+    <div class="col-md-9 form-container-body">
+    
+            <div class="form-container">
+                <form method="post">
+                    <h1>Add Staff Member Details</h1>
+        
+                    <div class="form-group">
+                        <label for="productName">serial number:</label>
+                        <input type="number" id="productName" name="serial" value="<%= editstaff.serial %>" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="productType">Identity:</label>
+                        <input type="number" id="productType" name="identity" value="<%= editstaff.identity %>" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="productPrice">Name:</label>
+                        <input type="text" id="productPrice" name="name" value="<%= editstaff.name %>" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="productQuantity">Contact Number:</label>
+                        <input type="number" id="productQuantity" name="phone" value="<%= editstaff.phone %>" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="productPrice">Address:</label>
+                        <input type="text" id="productPrice" name="address" value="<%= editstaff.address %>" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="productPrice">Region:</label>
+                        <input type="text" id="productPrice" name="region" value="<%= editstaff.region %>" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+            </div>
+            </div>
+        
+
+      <!-- ===================================== -->
+      <%- include('./footer.ejs')%>
+      <!-- ===================================== -->
+      

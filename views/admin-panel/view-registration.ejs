@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>view-registration-file</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body class="category-custom">
+
+    <!-- ===================================== -->
+    <%- include('./header.ejs')%>
+    <!-- ===================================== -->
+
+    <!-- ===================================== -->
+    <%- include('./left.ejs')%>
+    <!-- ===================================== -->
+    <div class="col-md-9">
+    <div class="container">
+<% if(regdata.length>0){ %>
+
+<table id="brandTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>phone number</th>
+            <th>password</th>
+            <th>Actions</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <%for(var i=0; i<regdata.length;i++){%>
+        <tr>
+            <td><%= regdata[i].name %></td>
+            <td><%= regdata[i].email %></td>
+            <td><%= regdata[i].phonenumber %></td>
+            <td><%= regdata[i].password %></td>
+            <td>
+                <a href="/delete1/<%= regdata[i]._id %>"><button class="button1">Delete</button></a>&nbsp;
+                <a href="/edit1/<%= regdata[i]._id %>" ><button class="button2">Edit</button></a>
+
+            </td>
+         
+        </tr>
+        <% } %>
+    </tbody>
+</table>
+
+<% } else { %>
+    no record found
+
+    <%} %>
+    </div>
+</div>
+</div>
+
+
+    <!-- ===================================== -->
+    <%- include('./footer.ejs')%>
+    <!-- ===================================== -->
+    
+
+</body>
+</html>
