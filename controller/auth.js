@@ -51,7 +51,7 @@ router.get('/',async (req,res)=>{
     try{
       const productdata = await productadded.find({});
       res.render('index' , {productdata:productdata});
-      console.log(productdata);
+    //   console.log(productdata);
     }catch(err){
       console.log(err)
     }
@@ -67,7 +67,7 @@ router.get('/productdetail/:id',async (req,res)=>{
     try{
       const productdata = await productadded.findById(req.params.id);
       res.render('productdetail', {productdata:productdata});
-      console.log(productdata);
+    //   console.log(productdata);
     }catch(err){
       console.log(err)
     }
@@ -164,10 +164,20 @@ router.get('/item-table', (req, res) => {
 
 router.get('/category', (req, res) => {
     var user = req.session.user;
-    if(req.session.user && req.cookies.user_sid && user.email=="admin@gmail.com") {
+    if(req.session.user){
+        console.log(req.session.user)
+    }
+    if(req.cookies.user_sid){
+        console.log(req.cookies.user_sid)
+    }
+    
+    if(req.session.user || req.cookies.user_sid) {
+        // console.log("this is some category data");
         res.render('./admin-panel/category');
 
     } else{
+        // console.log("this is not category data");
+
         res.redirect("/login-form");
     }
 });
@@ -282,7 +292,7 @@ router.post('/register',(req,res)=>{
     });
     user.save().then(()=>{
         console.log("saved data");
-        res.redirect('/registration-form');
+        res.redirect('/login-form');
 
     })
     .catch((err)=>{
@@ -298,7 +308,7 @@ router.get('/view-registration',async (req,res)=>{
   try{
     const regdata = await importmodel.find({});
     res.render('./admin-panel/view-registration' , {regdata:regdata});
-    console.log(regdata);
+    // console.log(regdata);
   }catch(err){
     console.log(err)
   }
@@ -330,7 +340,7 @@ router.get("/edit1/:id", async (req,res) => {
     try{
         const editregister = await importmodel.findById(req.params.id);
 
-        console.log(editregister);
+        // console.log(editregister);
 
         res.render('./admin-panel/edit-register' , {editregister:editregister})
     }
@@ -430,7 +440,7 @@ router.get('/login-table',async (req,res)=>{
     try{
       const loginformdata = await importmodel.find({});
       res.render('./admin-panel/login-table' , {logindata:loginformdata});
-      console.log(loginformdata);
+    //   console.log(loginformdata);
     }catch(err){
       console.log(err)
     }
@@ -442,7 +452,7 @@ router.get('/login-table',async (req,res)=>{
 
 router.get("/logout" , (req,res) => {
     if(req.session.user && req.cookies.user_sid) {
-        req.clearCookie("user_sid");
+        res.clearCookie("user_sid");
         res.redirect("/");
     } else{
         res.redirect("/login-form");
@@ -475,7 +485,7 @@ router.get("/edit2/:id", async (req,res) => {
     try{
         const editlogin = await importmodel.findById(req.params.id);
 
-        console.log(editlogin);
+        // console.log(editlogin);
 
         res.render('./admin-panel/edit-login' , {editlogin:editlogin})
     }
@@ -554,7 +564,7 @@ router.get('/view-contact',async (req,res)=>{
     try{
       const contactusdata = await modelcontactus.find({});
       res.render('./admin-panel/view-contact' , {contactdata:contactusdata});
-      console.log(contactusdata);
+    //   console.log(contactusdata);
     }catch(err){
       console.log(err)
     }
@@ -585,7 +595,7 @@ router.get("/edit3/:id", async (req,res) => {
     try{
         const editcontact = await modelcontactus.findById(req.params.id);
 
-        console.log(editcontact);
+        // console.log(editcontact);
 
         res.render('./admin-panel/edit-contact' , {editcontact:editcontact})
     }
@@ -689,7 +699,7 @@ router.get('/view-product',async (req,res)=>{
     try{
       const productdata = await productadded.find({});
       res.render('./admin-panel/view-product' , {productdata:productdata});
-      console.log(productdata);
+    //   console.log(productdata);
     }catch(err){
       console.log(err)
     }
@@ -720,7 +730,7 @@ router.get("/edit4/:id", async (req,res) => {
     try{
         const editproduct = await productadded.findById(req.params.id);
 
-        console.log(editproduct);
+        // console.log(editproduct);
 
         res.render('./admin-panel/edit-product' , {editproduct:editproduct})
     }
@@ -801,7 +811,7 @@ router.get('/staff-table',async (req,res)=>{
     try{
       const staffdata = await addedstaff.find({});
       res.render('./admin-panel/staff-table' , {stafftable:staffdata});
-      console.log(staffdata);
+    //   console.log(staffdata);
     }catch(err){
       console.log(err)
     }
@@ -832,7 +842,7 @@ router.get("/edit5/:id", async (req,res) => {
     try{
         const editstaff = await addedstaff.findById(req.params.id);
 
-        console.log(editstaff);
+        // console.log(editstaff);
 
         res.render('./admin-panel/edit-staff' , {editstaff:editstaff})
     }
@@ -908,7 +918,7 @@ router.get('/brand-table',async (req,res)=>{
     try{
       const brandsdata = await brandsadded.find({});
       res.render('./admin-panel/brand-table' , {brandstable:brandsdata});
-      console.log(brandsdata);
+    //   console.log(brandsdata);
     }catch(err){
       console.log(err)
     }
@@ -938,7 +948,7 @@ router.get("/edit6/:id", async (req,res) => {
     try{
         const editbrand = await brandsadded.findById(req.params.id);
 
-        console.log(editbrand);
+        // console.log(editbrand);
 
         res.render('./admin-panel/edit-brand' , {editbrand:editbrand})
     }

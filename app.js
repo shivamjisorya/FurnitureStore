@@ -19,7 +19,7 @@ app.use(
         secret:"somerandonstuff",
         resave:false ,
         saveUninitialised:false,
-        cookie:{expires:60000}
+        cookie:{expires:6000000}
     })
 )
 // ===================auth file==============================
@@ -51,7 +51,7 @@ app.use(express.static('upload'));
 // can use this method too for making static
 // app.use( express.static(path.join(__dirname,'/upload')))
 
-console.log(global);
+// console.log(global);
 app.listen(port, () => {
     console.log(`Server is running on port ${port} `);
     // process.exit(1);

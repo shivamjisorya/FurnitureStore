@@ -129,64 +129,13 @@
   <h2 class="py-3 text-center"></h2>
   <div class="row py-5 justify-content-center">
       <div class="col">
-          <ul class="nav nav-tabs" id="myTab">
-              <li class="nav-item">
-                  <a href="#NewArrivals" class="nav-link active">New Arrivals</a>
-              </li>
-              <li class="nav-item">
-                  <a href="#BestSellers" class="nav-link">Best Sellers</a>
-              </li>
-              <li class="nav-item">
-                  <a href="#SaleItems" class="nav-link">Sale Items</a>
-              </li>
-          </ul>
+        
           <div class="tab-content" id="myTabContent">
               <div id="NewArrivals" class="container tab-pane fade show active">
                   <div>
                    <!-- new arrivals Cards -->
   <div class="row mt-5">
-    <div class="col-md-4 mt-5">
-      <div class="pet-card card">
-        <img src="./furntiurepics/chair1.jpg" class="pet-card-img-top " alt="Cat 1">
-        <div class="pet-card-body">
-          <h5 class="card-title">Adorable Cat</h5>
-          <p class="card-text">Lovely cat for adoption. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p class="card-text"><strong>$99.99</strong></p>
-          <button class="btn btn-checkout" onclick="openOffCanvas()">
-        <i class="fas fa-shopping-cart"></i> Add to Cart
-        </button>
-        </div>
-      </div>
-    </div>
 
-      <div class="col-md-4 mt-5">
-        <div class="pet-card card">
-          <img src="./furntiurepics/chair2.jpg" class="pet-card-img-top" alt="Cat 1">
-          <div class="pet-card-body">
-            <h5 class="card-title">Adorable Cat</h5>
-            <p class="card-text">Lovely cat for adoption. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p class="card-text"><strong>$99.99</strong></p>
-            <button class="btn btn-checkout" onclick="openOffCanvas()">
-        <i class="fas fa-shopping-cart"></i> Add to Cart
-        </button>
-          </div>
-        </div>
-      </div>
-
-
-        <div class="col-md-4 mt-5">
-          <div class="pet-card card">
-            <img src="./furntiurepics/chair3.jpg" class="pet-card-img-top" alt="Cat 1">
-            <div class="pet-card-body">
-              <h5 class="card-title">Adorable Cat</h5>
-              <p class="card-text">Lovely cat for adoption. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p class="card-text"><strong>$99.99</strong></p>
-              <button class="btn btn-checkout" onclick="openOffCanvas()">
-        <i class="fas fa-shopping-cart"></i> Add to Cart
-        </button>
-            </div>
-          </div>
-        </div>
 
         
         <% if(productdata.length>0){ %>
@@ -198,10 +147,10 @@
               <div class="pet-card-body">
                 <h5 class="card-title"><%= productdata[i].productname %></h5>
                 <p class="card-text"><%= productdata[i].producttype %></p>
-                <p class="card-text"><strong><%= productdata[i].productprice %></strong></p>
-                <button class="btn btn-checkout" onclick="openOffCanvas()">
-              <i class="fas fa-shopping-cart"></i> Add to Cart
-              </button>
+                <p class="card-text"> <strong>Rs. <%= productdata[i].productprice %></strong></p>
+                <button class="btn btn-checkout btn-checkout1 btn_clk"  onclick="openOffCanvas()" data-name="<%= productdata[i].productname %>" data-type="<%= productdata[i].producttype %>" data-price="<%= productdata[i].productprice %>" data-filename="<%= productdata[i].filename %>">
+                  <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
               <a href="/productdetail/<%= productdata[i]._id %>"><button  class="btn btn-checkout">Details</button></a>
               </div>
             </div>
@@ -209,272 +158,17 @@
 
           
           <% } %>
+        </div>
     
     <% } else { %>
         no record found
     
         <%} %>
 
-        <!-- [=========================================================================================] -->
-                                <!-- second row -->
-        <!-- [=========================================================================================] -->
-
-
-                                <div class="row mt-5">
-                                  <div class="col-md-4 mt-5">
-                                    <div class="pet-card card">
-                                      <img src="./furntiurepics/chair4.jpg" class="pet-card-img-top" alt="Cat 1">
-                                      <div class="pet-card-body">
-                                        <h5 class="card-title">Adorable Cat</h5>
-                                        <p class="card-text">Lovely cat for adoption. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <p class="card-text"><strong>$99.99</strong></p>
-                                        <button class="btn btn-checkout" onclick="openOffCanvas()">
-        <i class="fas fa-shopping-cart"></i> Add to Cart
-        </button>
-                                      </div>
-                                    </div>
-                                  </div>
-                              
-                                    <div class="col-md-4 mt-5">
-                                      <div class="pet-card card">
-                                        <img src="./furntiurepics/chair5.jpg" class="pet-card-img-top" alt="Cat 1">
-                                        <div class="pet-card-body">
-                                          <h5 class="card-title">Adorable Cat</h5>
-                                          <p class="card-text">Lovely cat for adoption. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                          <p class="card-text"><strong>$99.99</strong></p>
-                                          <button class="btn btn-checkout" onclick="openOffCanvas()">
-        <i class="fas fa-shopping-cart"></i> Add to Cart
-        </button>
-                                        </div>
-                                      </div>
-                                    </div>
-                              
-                              
-                                      <div class="col-md-4 mt-5">
-                                        <div class="pet-card card">
-                                          <img src="./furntiurepics/chair6.jpg" class="pet-card-img-top" alt="Cat 1">
-                                          <div class="pet-card-body">
-                                            <h5 class="card-title">Adorable Cat</h5>
-                                            <p class="card-text">Lovely cat for adoption. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            <p class="card-text"><strong>$99.99</strong></p>
-                                            <button class="btn btn-checkout" onclick="openOffCanvas()">
-        <i class="fas fa-shopping-cart"></i> Add to Cart
-        </button>
-                                          </div>
-                                        </div>
-                                      </div>
-    </div>
-
-    <!-- Add more Cat cards here if needed -->
-              </div>
-              </div>
+             
+</div>
           </div>
-          <div class="tab-content" id="myTabContent">
-              <div id="BestSellers" class="container tab-pane fade show">
-                  <br>
-                  <div class="row">
-                  <!-- Dog Cards - Initially hidden -->
-  <div class="row">
-    <div class="col-md-4 mt-5">
-      <div class="pet-card">
-        <img src="https://place-puppy.com/300x200" class="pet-card-img-top" alt="Dog 1">
-        <div class="pet-card-body">
-          <h5 class="card-title">Friendly Dog</h5>
-          <p class="card-text">Awesome dog looking for a new home. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p class="card-text"><strong>$199.99</strong></p>
-          <button class="btn btn-checkout" onclick="openOffCanvas()">
-        <i class="fas fa-shopping-cart"></i> Add to Cart
-        </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 mt-5">
-      <div class="pet-card">
-        <img src="https://place-puppy.com/300x200" class="pet-card-img-top" alt="Dog 1">
-        <div class="pet-card-body">
-          <h5 class="card-title">Friendly Dog</h5>
-          <p class="card-text">Awesome dog looking for a new home. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p class="card-text"><strong>$199.99</strong></p>
-          <button class="btn btn-checkout" onclick="openOffCanvas()">
-        <i class="fas fa-shopping-cart"></i> Add to Cart
-        </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 mt-5">
-      <div class="pet-card">
-        <img src="https://place-puppy.com/300x200" class="pet-card-img-top" alt="Dog 1">
-        <div class="pet-card-body">
-          <h5 class="card-title">Friendly Dog</h5>
-          <p class="card-text">Awesome dog looking for a new home. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p class="card-text"><strong>$199.99</strong></p>
-          <button class="btn btn-checkout" onclick="openOffCanvas()">
-        <i class="fas fa-shopping-cart"></i> Add to Cart
-        </button>
-        </div>
-      </div>
-    </div>
-
-  <!-- [=========================================================================================] -->
-                                <!-- second row -->
-        <!-- [=========================================================================================] -->
-
-
-    <div class="row">
-      <div class="col-md-4 mt-5">
-        <div class="pet-card">
-          <img src="https://place-puppy.com/300x200" class="pet-card-img-top" alt="Dog 1">
-          <div class="pet-card-body">
-            <h5 class="card-title">Friendly Dog</h5>
-            <p class="card-text">Awesome dog looking for a new home. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p class="card-text"><strong>$199.99</strong></p>
-            <button class="btn btn-checkout" onclick="openOffCanvas()">
-        <i class="fas fa-shopping-cart"></i> Add to Cart
-        </button>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-md-4 mt-5">
-        <div class="pet-card">
-          <img src="https://place-puppy.com/300x200" class="pet-card-img-top" alt="Dog 1">
-          <div class="pet-card-body">
-            <h5 class="card-title">Friendly Dog</h5>
-            <p class="card-text">Awesome dog looking for a new home. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p class="card-text"><strong>$199.99</strong></p>
-            <button class="btn btn-checkout" onclick="openOffCanvas()">
-        <i class="fas fa-shopping-cart"></i> Add to Cart
-        </button>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-md-4 mt-5">
-        <div class="pet-card">
-          <img src="https://place-puppy.com/300x200" class="pet-card-img-top" alt="Dog 1">
-          <div class="pet-card-body">
-            <h5 class="card-title">Friendly Dog</h5>
-            <p class="card-text">Awesome dog looking for a new home. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p class="card-text"><strong>$199.99</strong></p>
-            <button class="btn btn-checkout" onclick="openOffCanvas()">
-        <i class="fas fa-shopping-cart"></i> Add to Cart
-        </button>
-          </div>
-        </div>
-      </div>
-
-
-
-    <!-- Add more Dog cards here if needed -->
-  </div>
-              </div>
-              </div>
-          </div>
-          <div class="tab-content" id="myTabContent">
-              <div id="SaleItems" class="container tab-pane fade show">
-                  <br>
-                  <div class="row">
-                  <!-- Rabbit Cards - Initially hidden -->
-  <div class="row">
-    <div class="col-md-4 mt-5">
-      <div class="pet-card">
-        <img src="https://placebunny.com/300x200" class="pet-card-img-top" alt="Rabbit 1">
-        <div class="pet-card-body">
-          <h5 class="card-title">Cute Rabbit</h5>
-          <p class="card-text">Adorable rabbit ready for adoption. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p class="card-text"><strong>$79.99</strong></p>
-          <button class="btn btn-checkout" onclick="openOffCanvas()">
-        <i class="fas fa-shopping-cart"></i> Add to Cart
-        </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 mt-5">
-      <div class="pet-card">
-        <img src="https://placebunny.com/300x200" class="pet-card-img-top" alt="Rabbit 1">
-        <div class="pet-card-body">
-          <h5 class="card-title">Cute Rabbit</h5>
-          <p class="card-text">Adorable rabbit ready for adoption. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p class="card-text"><strong>$79.99</strong></p>
-          <button class="btn btn-checkout" onclick="openOffCanvas()">
-        <i class="fas fa-shopping-cart"></i> Add to Cart
-        </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 mt-5">
-      <div class="pet-card">
-        <img src="https://placebunny.com/300x200" class="pet-card-img-top" alt="Rabbit 1">
-        <div class="pet-card-body">
-          <h5 class="card-title">Cute Rabbit</h5>
-          <p class="card-text">Adorable rabbit ready for adoption. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p class="card-text"><strong>$79.99</strong></p>
-          <button class="btn btn-checkout" onclick="openOffCanvas()">
-        <i class="fas fa-shopping-cart"></i> Add to Cart
-        </button>
-        </div>
-      </div>
-    </div>
-
-      <!-- [=========================================================================================] -->
-                                <!-- second row -->
-        <!-- [=========================================================================================] -->
-
-
-        <div class="row" >
-          <div class="col-md-4 mt-5">
-            <div class="pet-card">
-              <img src="https://placebunny.com/300x200" class="pet-card-img-top" alt="Rabbit 1">
-              <div class="pet-card-body">
-                <h5 class="card-title">Cute Rabbit</h5>
-                <p class="card-text">Adorable rabbit ready for adoption. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p class="card-text"><strong>$79.99</strong></p>
-                <button class="btn btn-checkout" onclick="openOffCanvas()">
-        <i class="fas fa-shopping-cart"></i> Add to Cart
-        </button>
-              </div>
-            </div>
-          </div>
-      
-          <div class="col-md-4 mt-5">
-            <div class="pet-card">
-              <img src="https://placebunny.com/300x200" class="pet-card-img-top" alt="Rabbit 1">
-              <div class="pet-card-body">
-                <h5 class="card-title">Cute Rabbit</h5>
-                <p class="card-text">Adorable rabbit ready for adoption. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p class="card-text"><strong>$79.99</strong></p>
-                <button class="btn btn-checkout" onclick="openOffCanvas()">
-        <i class="fas fa-shopping-cart"></i> Add to Cart
-        </button>
-              </div>
-            </div>
-          </div>
-      
-          <div class="col-md-4 mt-5">
-            <div class="pet-card">
-              <img src="https://placebunny.com/300x200" class="pet-card-img-top" alt="Rabbit 1">
-              <div class="pet-card-body">
-                <h5 class="card-title">Cute Rabbit</h5>
-                <p class="card-text">Adorable rabbit ready for adoption. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p class="card-text"><strong>$79.99</strong></p>
-                <button class="btn btn-checkout" onclick="openOffCanvas()">
-        <i class="fas fa-shopping-cart"></i> Add to Cart
-        </button>
-              </div>
-            </div>
-          </div>
-    <!-- Add more Rabbit cards here if needed -->
-  </div>
-              </div>
-              </div>
-          </div>
-      </div>
-
-  </div>
+         
     </div>
 
 <!-- ===================================================================================== -->
@@ -606,6 +300,36 @@
 <!-- ===================footer================== -->
 </div>
 
+
+<script>
+  $(document).ready(function() {
+    $('.btn-checkout').on('click', function() {
+      var nameId = $(this).data('filename');
+      console.log('Data Name ID:', nameId);
+      $('#offCanvasImg').attr('src', '/' + nameId);
+      $('#modalImg').attr('src', '/' + nameId);
+    
+         });
+  });
+</script>
+<!-- <script>
+  $('.btn-checkout1').on('click', function () {
+    var this_data = $(this);
+
+    var name = this_data.data('name');
+    var type = this_data.data('type');
+    var price = this_data.data('price');
+    var filename = this_data.data('filename');
+
+    console.log(name , type , price , filename)
+
+    var modal = $(this);
+    modal.find('#modalImg').attr('src', '/' + filename);
+    modal.find('#product-name').text(name);
+    modal.find('#product-type').text(type);
+    modal.find('#product-price').text(price);
+  });
+</script> -->
 
 </body>
 </html>
